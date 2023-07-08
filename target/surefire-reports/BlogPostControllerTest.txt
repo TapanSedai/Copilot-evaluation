@@ -1,20 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: BlogPostControllerTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec <<< FAILURE!
-BlogPostControllerTest.testList()  Time elapsed: 0.023 sec  <<< FAILURE!
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec <<< FAILURE!
+BlogPostControllerTest.testList()  Time elapsed: 0.035 sec  <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "org.springframework.test.web.servlet.MockMvc.perform(org.springframework.test.web.servlet.RequestBuilder)" because "this.mockMvc" is null
-	at BlogPostControllerTest.testList(BlogPostControllerTest.java:37)
+	at BlogPostControllerTest.testList(BlogPostControllerTest.java:36)
 
 BlogPostControllerTest.testCreate()  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "org.springframework.test.web.servlet.MockMvc.perform(org.springframework.test.web.servlet.RequestBuilder)" because "this.mockMvc" is null
-	at BlogPostControllerTest.testCreate(BlogPostControllerTest.java:44)
+	at BlogPostControllerTest.testCreate(BlogPostControllerTest.java:43)
 
 BlogPostControllerTest.testEdit()  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "org.springframework.test.web.servlet.MockMvc.perform(org.springframework.test.web.servlet.RequestBuilder)" because "this.mockMvc" is null
-	at BlogPostControllerTest.testEdit(BlogPostControllerTest.java:51)
+	at BlogPostControllerTest.testEdit(BlogPostControllerTest.java:50)
 
-BlogPostControllerTest.testGetPostById()  Time elapsed: 0 sec  <<< FAILURE!
+BlogPostControllerTest.testGetPostById()  Time elapsed: 0.001 sec  <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "org.springframework.test.web.servlet.MockMvc.perform(org.springframework.test.web.servlet.RequestBuilder)" because "this.mockMvc" is null
-	at BlogPostControllerTest.testGetPostById(BlogPostControllerTest.java:59)
+	at BlogPostControllerTest.testGetPostById(BlogPostControllerTest.java:58)
+
+BlogPostControllerTest.testDeletePostById()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.springframework.test.web.servlet.MockMvc.perform(org.springframework.test.web.servlet.RequestBuilder)" because "this.mockMvc" is null
+	at BlogPostControllerTest.testDeletePostById(BlogPostControllerTest.java:66)
 

@@ -24,4 +24,9 @@ public class BlogPostController {
     public String getPostById(@PathVariable Integer id){
         return "blogpost/getPostById:" + id;
     }
+
+    @DeleteMapping("/{id}")
+    public String deletePostById(@PathVariable Integer id){
+        return "blogpost/deletePostById:" + id;
+    }
 }

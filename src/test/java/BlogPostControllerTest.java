@@ -5,11 +5,10 @@ import org.junit.jupiter.api.BeforeEach;
 
 
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
+
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
-import org.springframework.test.context.junit4.SpringRunner;
+
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
@@ -59,5 +58,13 @@ public class BlogPostControllerTest {
         mockMvc.perform(MockMvcRequestBuilders.get("/blogpost/{id}", id))
             .andExpect(MockMvcResultMatchers.status().isOk())
             .andExpect(MockMvcResultMatchers.content().string("blogpost/getPostById:" + id));
+    }
+
+    @Test
+    public void testDeletePostById() throws Exception {
+        int id = 1;
+        mockMvc.perform(MockMvcRequestBuilders.delete("/blogpost/{id}", id))
+            .andExpect(MockMvcResultMatchers.status().isOk())
+            .andExpect(MockMvcResultMatchers.content().string("blogpost/deletePostById:" + id));
     }
 }
